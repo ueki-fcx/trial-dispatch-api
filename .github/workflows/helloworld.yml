@@ -1,8 +1,9 @@
 name: Hello World
 
-# on: 
-#   workflow_dispatch:
-on: repository_dispatch
+on: 
+  repository_dispatch: 
+    types: [run-dbt-workflow]
+# on: repository_dispatch
 
 jobs:
   say_hello:
